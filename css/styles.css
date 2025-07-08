@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'stylish'; 
+  src: url('./fonts/JuliusSansOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  background-color:black;
+}
+
+h1 {
+    font-family: 'stylish';
+    color: rgb(0, 255, 157);
+    text-align: center;
+    padding: 10% 30%;
+}
