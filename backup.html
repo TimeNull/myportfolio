@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/images/logo10x.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LFM - Unity Developer</title>
+</head>
+
+<body>
+    <header class="fade-out auto">
+        <span class="text-[150%] md:text-[250%] font-bold ">Lucas Furatori Maranzato</span>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="line-1">
+                <video width="200" autoplay loop muted playsinline>
+                    <source src="/src/videos/motion-logo.webm" class="logo" alt="LFM logo" type="video/webm"/>
+                </video>
+            </div>
+            <div>
+                 <video width="200" autoplay loop muted playsinline>
+                    <source src="/src/videos/motion-logo.webm" class="logo" alt="LFM logo" type="video/webm"/>
+                </video>
+            </div>
+            <div>
+                <h1>Lucas Furatori Maranzato</h1>
+            </div>
+            <div>
+                <button class="button" id="counter" type="button"></button>
+            </div>
+            <div class="read-the-docs">
+                Lorem ipsum dolor sit amet 
+            </div>
+        </div>
+    </main>
+
+    <footer class="menu">
+        <a href="#" class="text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">WORK</a>
+        <a href="#" class="text-right text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">ABOUT</a>
+    </footer>
+
+<!-- ATIVAR DEPOIS
+    <div class="overlay active" id="overlay">
+        <video class="w-full h-auto max-h-[500px] object-cover" id="logo-intro" muted playsinline >
+            <source src="/src/videos/motion-logo.webm" class="logo" alt="LFM logo" type="video/webm"/>
+        </video>
+    </div>
+-->
+    
+
+</body>
+
+<script type="module" src="/src/scripts/main.js"></script>
+
+<script>
+  window.onload = function () {
+    const video = document.getElementById("logo-intro");
+    const overlay = document.getElementById("overlay");
+
+    function startVideo() {
+        video.currentTime = 0; 
+        video.play();
+    }
+
+    function stopVideo() {
+        video.pause();
+        video.currentTime = 0;
+    }
+
+    function hideOverlay() {
+        overlay.classList.remove("active");
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+    }
+
+    function onVisibilityChange() {
+        if (document.visibilityState === "visible")
+            startVideo();
+        else 
+            stopVideo();
+    }
+
+    video.addEventListener("ended", hideOverlay);
+    
+    if (document.visibilityState === "visible") startVideo();
+       
+    document.addEventListener("visibilitychange", onVisibilityChange);
+};
+</script>
+
+</html>

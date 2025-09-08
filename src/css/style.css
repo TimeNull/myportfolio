@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Helvetica;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;       /* ocupa toda a altura da viewport */
+  display: flex;
+  flex-direction: column;  /* header, main, footer em coluna */
+}
+
+main {
+    flex: 1; /* fills the gap between header and footer */
+    display: flex;
+}
+
+header, footer {
+    width: 100%;      
+    min-width: 320px;
+    text-align: center;
+    place-content: center;
+}
+
+header{
+    min-height: 100px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 500;
+}
+
+footer{
+    height: 75px;
+    background-color: #00000000;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+    pointer-events: none; 
+}
+
+footer > *{
+    pointer-events: auto;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    text-align: center;
+    place-content: start center; /* don't stretch */
+    align-items: start;
+    
+}
+
+.container > div {
+    position: relative;
+    background: rgb(54, 54, 54);
+    height: 200px;
+    place-content: center;
+    place-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container > div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to top, #0ff, transparent);
+  pointer-events: none; 
+}
+
+
+.overlay{
+    position: fixed;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    visibility: hidden;
+    overflow: visible;
+    opacity: 0;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}   
+
+.overlay.active{
+    visibility: visible;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
