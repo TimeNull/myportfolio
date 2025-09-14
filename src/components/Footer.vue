@@ -1,13 +1,14 @@
 <template>
      <footer class="menu">
-        <RouterLink class="text-left" to="/work">
-            <span class="text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">WORK</span>
+        <RouterLink class="justify-self-start text-left" to="/works">
+            <span class="text-xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">WORKS</span>
         </RouterLink>
-        <RouterLink class="text-center" to="/">
-            <span class="text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">HOME</span>
+        <RouterLink class="justify-self-center left-[10px]" to="/">
+            <!-- <span class="text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">HOME</span> -->
+            <img src="../images/logo4x.png" width="60px"></img>
         </RouterLink>
-        <RouterLink class="text-right" to="/about">
-            <span class="text-2xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">ABOUT</span>
+        <RouterLink class="justify-self-end text-right" to="/about">
+            <span class="text-xl font-bold text-[#00ffff] drop-shadow-[0_0_3px_#00ffff]">ABOUT</span>
         </RouterLink>
     </footer>
 </template>

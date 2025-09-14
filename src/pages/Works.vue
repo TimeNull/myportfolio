@@ -1,6 +1,6 @@
 <template>
-   
-    <Header1 />
+
+    <MenuWorks />
     <main>
         <div class="container">
             <div>
@@ -31,16 +31,10 @@
         </div>
     </main>
 
-
-<OverlayIntro />
-    
 </template>
 
 <script setup>
 
- import Header1 from '../components/Header.vue'
- import OverlayIntro from '../components/OverlayIntro.vue';
- import { gsap } from "gsap";
+import MenuWorks from '../components/MenuWorks.vue';
 
 </script>
-
