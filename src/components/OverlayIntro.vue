@@ -71,3 +71,34 @@ onUnmounted(() => {
     document.removeEventListener('visibilitychange', onVisibilityChange);
 })
 </script>
+
+<style scoped>
+
+.overlay{
+    position: fixed;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    visibility: hidden;
+    overflow: visible;
+    opacity: 0;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}   
+
+.overlay.active{
+    visibility: visible;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.overlay video{
+    object-fit: contain;
+}
+
+</style>

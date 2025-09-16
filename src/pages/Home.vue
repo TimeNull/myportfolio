@@ -3,44 +3,23 @@
     <Header1 />
     <main>
         <div class="container">
-            <div>
-                <video width="200" autoplay loop muted playsinline>
-                    <source src="/src/videos/motion-logo.webm" alt="LFM logo" type="video/webm"/>
-                </video>
-            </div>
-            <div>
-                 <video width="200" autoplay loop muted playsinline>
-                    <source src="/src/videos/motion-logo.webm" alt="LFM logo" type="video/webm"/>
-                </video>
-            </div>
-            <div>
-                <video width="200" autoplay loop muted playsinline>
-                    <source src="/src/videos/motion-logo.webm" alt="LFM logo" type="video/webm"/>
-                </video>
-            </div>
-            <div>
-                <video width="200" autoplay loop muted playsinline>
-                    <source src="/src/videos/motion-logo.webm" alt="LFM logo" type="video/webm"/>
-                </video>
-            </div>
-            <div>
-                <video width="200" autoplay loop muted playsinline>
-                    <source src="/src/videos/motion-logo.webm" alt="LFM logo" type="video/webm"/>
-                </video>
-            </div>
+            <div><WorkBlock page="/works/Lipix" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/EiLibras" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/Asleep" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/about" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/about" videoSrc="/src/videos/motion-logo.webm"/></div>
         </div>
     </main>
+    <Footer1 />
 
-
-<OverlayIntro />
-    
 </template>
 
 <script setup>
 
- import Header1 from '../components/Header.vue'
- import OverlayIntro from '../components/OverlayIntro.vue';
- import { gsap } from "gsap";
+import Footer1 from '../components/Footer.vue'
+import Header1 from '../components/Header.vue'
+import { gsap } from "gsap";
+import WorkBlock from '../components/WorkBlock.vue';
 
 </script>
 

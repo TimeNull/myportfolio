@@ -13,3 +13,15 @@
     </footer>
 </template>
     
+<style scoped>
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    place-items: center;
+}
+
+</style>

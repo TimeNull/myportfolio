@@ -71,16 +71,18 @@ footer > *{
 
 }
 
+.container div{
+    place-content: center;
+    place-items: center;
+}
+
 .container > div {
     position: relative;
     background: rgb(54, 54, 54);
     height: 200px;
-    place-content: center;
-    place-items: center;
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 .container > div::after {
   content: "";
@@ -95,75 +97,4 @@ footer > *{
 }
 
 
-.overlay{
-    position: fixed;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: black;
-    visibility: hidden;
-    overflow: visible;
-    opacity: 0;
-    transition: opacity 1s ease-out, visibility 1s ease-out;
-}   
-
-.overlay.active{
-    visibility: visible;
-    overflow: hidden;
-    opacity: 1;
-}
-
-.menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    place-items: center;
-}
-
-.menu-options{
-    display: flex;
-    position: fixed;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 100%;
-    height: 60px;
-    z-index: 500;
-    gap: 10px;
-    padding: 0 40px;
-
-    overflow-x: auto;
-    background-color: #00000000;
-    white-space: nowrap;
-    scrollbar-width: thin;
-}
-
-.menu-options::-webkit-scrollbar {
-  height: 6px;
-}
-
-.menu-options > label{
-    flex: 0 0 auto;       
-    cursor: pointer;
-    padding: 8px 16px;
-}
-
-.menu-options::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: #0ff;
-    filter: drop-shadow(#0ff 0 0 5px);
-    pointer-events: none; 
-}
 
