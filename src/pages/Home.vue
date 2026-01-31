@@ -3,11 +3,11 @@
     <Header1 />
     <main>
         <div class="container">
-            <div><WorkBlock page="/works/Lipix" videoSrc="/src/videos/motion-logo.webm"/></div>
-            <div><WorkBlock page="/works/EiLibras" videoSrc="/src/videos/motion-logo.webm"/></div>
-            <div><WorkBlock page="/works/Asleep" videoSrc="/src/videos/motion-logo.webm"/></div>
-            <div><WorkBlock page="/about" videoSrc="/src/videos/motion-logo.webm"/></div>
-            <div><WorkBlock page="/about" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/lipix" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/eilibras" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/asleep1" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/asleep2" videoSrc="/src/videos/motion-logo.webm"/></div>
+            <div><WorkBlock page="/works/asleep3" videoSrc="/src/videos/motion-logo.webm"/></div>
         </div>
     </main>
     <Footer1 />
