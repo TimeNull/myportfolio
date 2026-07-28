@@ -192,7 +192,8 @@ p{
 }
 
 .text-body{
-
+    font-size: 250%;
+    font-weight: 250;
 }
 
 </style>

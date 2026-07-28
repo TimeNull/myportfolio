@@ -11,7 +11,7 @@
             <span class="checkmark"></span>
         </label>
         
-        <label for="tab3" >UNIVERSITY PROJECTS
+        <label for="tab3" >ACADEMIC PROJECTS
             <input type="radio" name="menu" id="tab3" value="university" v-model="bus.selectedMode" >
             <span class="checkmark"></span>
         </label>

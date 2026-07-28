@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Inter; /* set name */
-  src: url(fonts/Inter_VariableFont_opsz_wght.woff2) format('woff2');/* url of the font */
+  src: url(fonts/Inter_VariableFont_opsz_wght.woff2) format('woff2-variations');/* url of the font */
   font-weight: 100 900; 
   font-style: normal;
   font-display: swap;
@@ -14,13 +14,13 @@
   font-family: Inter;
   line-height: 1.5;
 
-  font-variation-settings: "wght" 200, "opsz" 48;
+  font-variation-settings: "opsz" 48;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
 
-  font-synthesis: none;
+  font-synthesis: weight;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
